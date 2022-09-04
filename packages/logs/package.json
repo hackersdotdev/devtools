@@ -1,0 +1,32 @@
+{
+  "name": "@hckrs/logs",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "clean": "rm -rf .turbo node_modules dist",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint src/**/*.ts*",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "@hckrs/tsconfig": "*",
+    "eslint": "^8.23.0",
+    "eslint-config-hckrs": "*",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
