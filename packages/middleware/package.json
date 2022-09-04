@@ -16,10 +16,8 @@
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint src/**/*.ts*",
     "typecheck": "tsc -b"
   },
-  "dependencies": {
-    "@hckrs/logs": "*"
-  },
   "devDependencies": {
+    "@hckrs/logs": "*",
     "@hckrs/tsconfig": "*",
     "@types/express": "^4.17.13",
     "eslint": "^8.23.0",
