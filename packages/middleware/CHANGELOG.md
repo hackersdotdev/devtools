@@ -1,5 +1,11 @@
 # @hckrs/middleware
 
+## 0.0.4
+
+### Patch Changes
+
+- 42135c3: Move @hckrs/logs to dev deps now that it is external.
+
 ## 0.0.3
 
 ### Patch Changes
