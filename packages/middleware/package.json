@@ -10,9 +10,9 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external @hckrs/logs",
     "clean": "rm -rf .turbo node_modules dist",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external @hckrs/logs",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint src/**/*.ts*",
     "typecheck": "tsc -b"
   },
