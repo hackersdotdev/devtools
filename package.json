@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "healthcheck": "yarn clean && yarn install && turbo run --no-cache lint typecheck test build",
+    "lint": "turbo run lint",
+    "release": "turbo run build --filter=docs^... && changeset publish",
+    "typecheck": "turbo run typecheck",
+    "version-packages": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.24.2",
+    "eslint": "^8.23.0",
+    "eslint-config-hckrs": "*",
+    "prettier": "^2.7.1",
+    "turbo": "^1.4.5",
+    "typescript": "^4.8.2"
+  }
+}
