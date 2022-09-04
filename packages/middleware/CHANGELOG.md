@@ -1,5 +1,11 @@
 # @hckrs/middleware
 
+## 0.0.3
+
+### Patch Changes
+
+- 1f2cf25: Make @hckrs/logs external in build
+
 ## 0.0.2
 
 ### Patch Changes
