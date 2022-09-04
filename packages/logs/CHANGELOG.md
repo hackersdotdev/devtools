@@ -1,5 +1,11 @@
 # @hckrs/logs
 
+## 0.0.2
+
+### Patch Changes
+
+- 8d2a738: Include built JS files in published packages.
+
 ## 0.0.1
 
 ### Patch Changes
