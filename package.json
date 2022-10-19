@@ -11,7 +11,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "healthcheck": "yarn clean && yarn install && turbo run --no-cache lint typecheck test build",
     "lint": "turbo run lint",
-    "release": "turbo run build --filter=docs^... && changeset publish",
+    "release": "changeset publish",
     "typecheck": "turbo run typecheck",
     "version-packages": "changeset version"
   },
