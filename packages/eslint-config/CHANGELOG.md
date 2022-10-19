@@ -1,5 +1,11 @@
 # eslint-config-hckrs
 
+## 0.0.3
+
+### Patch Changes
+
+- 5dfd3a4: Fix devDependencies that should be peerDependencies.
+
 ## 0.0.2
 
 ### Patch Changes
