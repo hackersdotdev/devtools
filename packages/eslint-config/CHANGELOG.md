@@ -1,5 +1,11 @@
 # eslint-config-hckrs
 
+## 0.0.4
+
+### Patch Changes
+
+- bb3c12c: Allow TS v5
+
 ## 0.0.3
 
 ### Patch Changes
